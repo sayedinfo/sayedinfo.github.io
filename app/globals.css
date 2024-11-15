@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.focused-skill {
+  @apply relative w-28 h-10 before:h-28 overflow-hidden before:absolute before:inset-[-50%] 
+  before:animate-spin before:bg-[conic-gradient(transparent,transparent,#00a6ff)];
+}
+
+.skill-item {
+  @apply border border-blue-500 text-theme dark:text-white text-sm rounded-3xl px-3 py-1.5;
+}
+
+.skill-item-text {
+  @apply bg-white dark:bg-theme w-[108px] h-9 flex items-center justify-center absolute inset-[1px] rounded-3xl;
+}
